@@ -1,0 +1,415 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root{
+    font-size: 16px;
+    --text-heading:'Roboto', sans-serif;
+}
+body::-webkit-scrollbar{
+    width:15px;
+}
+body::-webkit-scrollbar-thumb{background-color: #09c; border-radius: 10px;}
+@media (max-width:1075px)and (min-width:767px){
+    :root{
+        font-size: 14px;
+    }
+}
+@media (max-width:757px){
+    :root{
+        font-size: 14px;
+    }
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    background: #404040 url('../images/mainBackGround.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.bg-nav{
+    background-color: #404040 !important;
+    color: #ecf0f1;
+}
+.bg-movies{
+    background:-webkit-gradient(linear ,left top, right top ,from(#54a0ff),to(#1abc9c))  !important;
+    background:-o-linear-gradient(left ,#54a0ff,#1abc9c)  !important;
+    background:linear-gradient(to right ,#54a0ff,#1abc9c)  !important;
+}
+.bg-contacts{
+    background:-webkit-gradient(linear,left top, left bottom,from(#54a0ff),to(#fff))  !important;
+    background:-o-linear-gradient(#54a0ff,#fff)  !important;
+    background:linear-gradient(#54a0ff,#fff)  !important;
+
+}
+.moviesContainer{
+    background: -webkit-gradient(linear,left top, right top,from(#3498db),color-stop(#2980b9),to(#1abc9c));
+    background: -o-linear-gradient(left,#3498db,#2980b9,#1abc9c);
+    background: linear-gradient(to right,#3498db,#2980b9,#1abc9c);}
+.movie{
+    background: -webkit-gradient(linear,left top, left bottom,from(#3498db),color-stop(#2980b9),to(#1abc9c));
+    background: -o-linear-gradient(#3498db,#2980b9,#1abc9c);
+    background: linear-gradient(#3498db,#2980b9,#1abc9c);
+    border-radius:20px;
+    overflow: hidden;
+}
+.movieDesc{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align:center;
+        align-self:center;
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.movieDesc h2{
+    font-size:2rem;
+    color: #fff;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-weight: 600;
+}
+@media (max-width:960px )and (min-width:767px){
+    .movieDesc h2{
+       word-wrap:break-word;
+       -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+       overflow: hidden;
+       white-space: nowrap;
+    }
+}
+.movieDesc p{
+    font-size:1rem;
+    color: #f5feff;
+    font-weight: 500;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    
+}
+.moviePoster{
+    height: 100%;
+    background-color: #09c;
+
+}
+.moviePoster img{
+    width:100% !important;
+    height: 100% ;
+    max-height: 70vh;
+}
+#adminHome{
+    background:#09c url('../images/adminHome.jpg'); 
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#adminHome h1{
+    color: #f3e6bf;
+    font-weight: 600;
+    text-shadow: 0 0 30px #000;
+}
+#adminHome a{
+    cursor: pointer;
+}
+#uploadingForm{
+    min-height: 65vh;
+
+}
+#uploading{
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+#uploading .uploadingButton{
+opacity: 0;
+width: 40px;
+overflow: hidden;
+position: relative;
+z-index: 15555;
+
+}
+
+#uploading .uploadingView{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    color: #09c;
+}
+.paginationContainer{
+    background:-webkit-gradient(linear,left top, right top,from(#54a0ff),to(#1abc9c)) ;
+    background:-o-linear-gradient(left,#54a0ff,#1abc9c) ;
+    background:linear-gradient(90deg,#54a0ff,#1abc9c) ;
+    padding-top: 10px;
+}
+.tableContainer{
+    min-height: 90vh;
+}
+.imgToUpdate{
+    width: 150px;
+    height: 150px;
+}
+.movieView{
+    background-color: #ecf0f1;
+}
+
+.filmOverview h1.filmTitle{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #3498db;
+    font-family: var(--text-heading);
+}
+.filmOverview p.filmDescription{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--text-heading);
+    margin-top: 15px;
+    color: #004085;
+}
+
+.filmPicture img{
+    max-height: 50vh;
+    border-radius: 15px;
+}
+.videoIframe{
+    width:60vw;
+    height: 315px;
+}
+@media (max-width:938px){
+    .videoIframe{
+        width: 80vw;
+    }
+}
+@media (max-width:500px){
+    .videoIframe{
+        width: 90vw;
+    }
+}
+/*header Animation in index page  done with scss*/
+
+#carrouselPosterHead {
+    background: -webkit-gradient(linear, left top, left bottom, from(#485460), to(#808e9b));
+    background: -o-linear-gradient(#485460, #808e9b);
+    background: linear-gradient(#485460, #808e9b);
+    position: absolute;
+    top: 20px;
+    left:20px;
+    color: #fff;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.headerAnimation svg{
+    width: 400px;
+}
+@media (max-width:500px){
+    .headerAnimation svg{
+        width: 300px;
+    }
+}
+.headerAnimation svg path {
+    stroke: #fff;
+}
+.headerAnimation svg path:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(2) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(3) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(4) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(5) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(6) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(7) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(8) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(9) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(10) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(11) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(12) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(13) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(14) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(15) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(16) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(17) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(18) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+.headerAnimation svg path:nth-child(1) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 0.5s;
+            animation: linearAnimation 3s linear forwards 1 0.5s;
+}
+.headerAnimation svg path:nth-child(2) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 1s;
+            animation: linearAnimation 3s linear forwards 1 1s;
+}
+.headerAnimation svg path:nth-child(3) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 1.5s;
+            animation: linearAnimation 3s linear forwards 1 1.5s;
+}
+.headerAnimation svg path:nth-child(4) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 2s;
+            animation: linearAnimation 3s linear forwards 1 2s;
+}
+.headerAnimation svg path:nth-child(5) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 2.5s;
+            animation: linearAnimation 3s linear forwards 1 2.5s;
+}
+.headerAnimation svg path:nth-child(6) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 3s;
+            animation: linearAnimation 3s linear forwards 1 3s;
+}
+.headerAnimation svg path:nth-child(7) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 3.5s;
+            animation: linearAnimation 3s linear forwards 1 3.5s;
+}
+.headerAnimation svg path:nth-child(8) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 4s;
+            animation: linearAnimation 3s linear forwards 1 4s;
+}
+.headerAnimation svg path:nth-child(9) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 4.5s;
+            animation: linearAnimation 3s linear forwards 1 4.5s;
+}
+.headerAnimation svg path:nth-child(10) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 5s;
+            animation: linearAnimation 3s linear forwards 1 5s;
+}
+.headerAnimation svg path:nth-child(11) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 5.5s;
+            animation: linearAnimation 3s linear forwards 1 5.5s;
+}
+.headerAnimation svg path:nth-child(12) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 6s;
+            animation: linearAnimation 3s linear forwards 1 6s;
+}
+.headerAnimation svg path:nth-child(13) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 6.5s;
+            animation: linearAnimation 3s linear forwards 1 6.5s;
+}
+.headerAnimation svg path:nth-child(14) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 7s;
+            animation: linearAnimation 3s linear forwards 1 7s;
+}
+.headerAnimation svg path:nth-child(15) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 7.5s;
+            animation: linearAnimation 3s linear forwards 1 7.5s;
+}
+.headerAnimation svg path:nth-child(16) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 8s;
+            animation: linearAnimation 3s linear forwards 1 8s;
+}
+.headerAnimation svg path:nth-child(17) {
+    -webkit-animation: linearAnimation 3s linear forwards 1 8.5s;
+            animation: linearAnimation 3s linear forwards 1 8.5s;
+}
+@-webkit-keyframes linearAnimation {
+    0% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+   }
+    50% {
+        stroke-dashoffset: 357.1620788574;
+        stroke-dasharray: 357.1620788574;
+   }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+   }
+}
+@keyframes linearAnimation {
+    0% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+   }
+    50% {
+        stroke-dashoffset: 357.1620788574;
+        stroke-dasharray: 357.1620788574;
+   }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+   }
+}
+
+
+/*end of animation section in index page*/
