@@ -1,4 +1,6 @@
 <?php
+//here is not the best bractice 
+//this comment is written to test github
 class dbConnection
 {
     var $conn;
